@@ -10,6 +10,7 @@ import java.util.Scanner;
  * @author WIN
  */
 public class MenuView {
+
     public MenuView() {
     }
     
@@ -25,4 +26,3 @@ public class MenuView {
         return kq;
     }
 }
-

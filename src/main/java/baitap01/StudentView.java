@@ -59,10 +59,28 @@ public class StudentView {
         System.out.println("++++++++++++++++++++++++++++++++++");
     }
     
-    //Tra ve so thu tu dau tien cua sv trong mang tim kiem dc
-    public int tim_sv_theo_sdt(ArrayList<Student> students){
-        int result = -1; //khong tim thay
-        
-        return result;
+    
+    
+    //view nhap thong tin can tim
+    public String nhap_sdt_can_tim(){
+        System.out.println("+++++++++++++++++++++++");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap so dien thoai can tim kiem: ");
+        String sdt = sc.nextLine();
+        System.out.println("+++++++++++++++++++++++");
+        return sdt;
+    }
+    
+    //view in ket qua tim kiem
+    public void ket_qua_tim_kiem_sdt(ArrayList<Student> students){
+        System.out.println("+++++++++++++++++++++++");
+        if (students.isEmpty()){
+            System.out.println("Khong tim thay");
+        }else{
+            for(Student sv: students){
+                System.out.println(sv.toString());
+            }
+        }
+        System.out.println("+++++++++++++++++++++++");
     }
 }
